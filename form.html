@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <link rel="icon" href="ak.jpg"
+</head>
+<style>
+
+</style>
+<body>
+    <h1>User Information Form</h1>
+    <form action="/submit" method="post">
+        <label for="Sal">Salutation:</label>
+        <select id="sal" name="salu">
+            <option value="n">--Select--</option>
+            
+            <option value="mr.">Mr.</option>
+            <option value="mrs.">Mrs.</option>
+            
+        </select>
+        
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" >
+        
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="name">
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" >
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="none">--Select--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
